@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ES2020"],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@keepclos/context-engine": ["packages/context-engine/src"],
+      "@keepclos/reminder-engine": ["packages/reminder-engine/src"],
+      "@keepclos/contact-sync": ["packages/contact-sync/src"],
+      "@keepclos/privacy-vault": ["packages/privacy-vault/src"],
+      "@keepclos/shared": ["packages/shared/src"]
+    }
+  },
+  "include": ["apps", "packages"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@keepclos/reminder-engine",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@keepclos/shared": "workspace:*",
+    "@keepclos/context-engine": "workspace:*",
+    "cron-parser": "^4.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3"
+  }
+}
