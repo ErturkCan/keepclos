@@ -47,18 +47,18 @@ KeepClos helps you maintain meaningful relationships by:
 Combines three dimensions into a 0-100 health score:
 
 - **Recency** (40% weight): Time since last contact, using exponential decay
-  - Recent interactions weighted heavily
-  - 30-day half-life: 50 days = 25 score points
+ - Recent interactions weighted heavily
+ - 30-day half-life: 50 days = 25 score points
 
 - **Frequency** (30% weight): Interactions per time window
-  - Measures consistency of engagement
-  - Calculated over 90-day rolling window
-  - Expected baseline: 1-2 interactions per month
+ - Measures consistency of engagement
+ - Calculated over 90-day rolling window
+ - Expected baseline: 1-2 interactions per month
 
 - **Engagement** (30% weight): Depth and quality of interactions
-  - Meeting > Call > Email > Message
-  - Bonuses for duration and detailed notes
-  - 0-100 per interaction, averaged
+ - Meeting > Call > Email > Message
+ - Bonuses for duration and detailed notes
+ - 0-100 per interaction, averaged
 
 ### 2. Intelligent Reminders
 Four rule types for different reminder patterns:

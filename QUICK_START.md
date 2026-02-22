@@ -195,7 +195,7 @@ Package: `@keepclos/privacy-vault`
 ```typescript
 import { encryptString, decryptString } from '@keepclos/privacy-vault';
 
-const password = 'user-master-password';
+const password = '<your-master-password>';
 
 // Encrypt
 const encrypted = encryptString('alice@example.com', password);
@@ -270,7 +270,7 @@ Create `.env.local` for configuration:
 ```bash
 NODE_ENV=development
 PORT=3000
-DATABASE_URL=postgresql://keepclos:keepclos_dev_password@localhost:5432/keepclos
+DATABASE_URL=postgresql://keepclos:<your-password>@localhost:5432/keepclos
 REDIS_URL=redis://localhost:6379
 ```
 

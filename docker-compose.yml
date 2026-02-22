@@ -6,7 +6,7 @@ services:
     container_name: keepclos-postgres
     environment:
       POSTGRES_USER: keepclos
-      POSTGRES_PASSWORD: keepclos_dev_password
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
       POSTGRES_DB: keepclos
     ports:
       - "5432:5432"
@@ -45,7 +45,7 @@ services:
     environment:
       NODE_ENV: development
       PORT: 3000
-      DATABASE_URL: postgresql://keepclos:keepclos_dev_password@postgres:5432/keepclos
+      DATABASE_URL: postgresql://${POSTGRES_USER:-keepclos}:${POSTGRES_PASSWORD:-changeme}@postgres:5432/keepclos
       REDIS_URL: redis://redis:6379
     ports:
       - "3000:3000"
